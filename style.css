@@ -82,6 +82,24 @@ img {
     border-radius       :3rem;
 }
 
+.fade {
+    animation-name      : fade;
+    animation-duration  : 1s;
+
+
+}
+
+
+@keyframes fade {
+
+    from  {
+        opacity         :0;
+    } 
+    to {
+        opacity         :1;
+    }
+}
+
 @media all and (min-width: 600px) {
 
     #game-area {

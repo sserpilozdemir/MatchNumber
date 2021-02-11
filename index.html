@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Number Match</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
     <main id="game-area">
 
         <div class="stats">
+
             <div id="statsContent">
 
                 <h3>
-                    Score <span id="currentScore">2</span>/
-                    <span id="totalAvailable">20</span>
+                    Score: <span id="currentScore"></span>/
+                    <span id="totalAvailable"></span>
                 </h3>
 
                 <p class="items">
-                    <span id="number">6</span><span id="item-name"> ducks</span>
+                    <span id="number"></span><span id="item-name"></span>
                 </p>
 
                 <div class="match-buttons">
-                    <button>&#10003;</button>
-                    <button>&#10007;</button>
+
+                    <button onClick="match()">&#10003;</button>
+                    <button onClick="noMatch()">&#10007;</button>
+
                 </div>
 
             </div>
@@ -41,19 +45,15 @@
                 <p class="space-y">&#9654; Hit thumbs up if the number of items matches the displayed number</p>
                 <p class="space-y">&#9654; Thumbs down if no match!</p>
                 <p class="space-y">
-                    You have <span id="timeSetting">3</span>seconds the decide.
+                    You have <span id="timeSetting"></span> seconds the decide.
                 </p>
-                <button id="play-button">Play!</button>
             </div>
-
-            <div id="imageContainer">
-                <img src="ldfklksjfsjdfs" alt=""/>
-
-        
-        
-
-
-    </main>
-    
+                <button id="play-button" onClick="play()">
+                    Play!
+                </button>
+                <div id="imageContainer"></div> 
+            </div>
+        </main>
+    <script src="script.js"></script>    
 </body>
 </html>
