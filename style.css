@@ -8,6 +8,7 @@ html {
 
     font-size           :1.6rem;
     padding-top         :3rem;
+    font-family         :300;
 }
 
 .imageArea, 
@@ -20,7 +21,7 @@ html {
 .imageArea {
 
     background          :linear-gradient(70deg, #859ede, #6965de);
-    border-radius       0 0 3rem 3rem;
+    border-radius       :0 0 3rem 3rem;
     display             :flex;
     flex-direction      :column;
     justify-content     :center;
@@ -83,10 +84,8 @@ img {
 }
 
 .fade {
-    animation-name      : fade;
-    animation-duration  : 1s;
-
-
+    animation-name      : inherit;
+    animation-duration  : 2s;
 }
 
 
@@ -123,6 +122,4 @@ img {
         margin-left     :3rem;
         padding-right   :3rem;
     }
-
-
 }
